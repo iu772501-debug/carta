@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('conf.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.book {
+  width: 320px;
+  height: 440px;
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  background: white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transform-origin: left;
+  transition: transform 1s ease;
+}
+
+.page1 {
+  background: #f9c74f;
+  z-index: 3;
+}
+
+.page2 {
+  background: #90be6d;
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.page3 {
+  background: #f94144;
+  color: white;
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.book.open1 .page1 {
+  transform: rotateY(-180deg);
+}
+
+.book.open2 .page2 {
+  transform: rotateY(-180deg);
+}
+
+.book.open3 .page3 {
+  transform: rotateY(-180deg);
+}

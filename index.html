@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación tipo libro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="book" onclick="playSound()">
+  <div class="page page1">
+    <h2>📖 ¡Hola amigo!</h2>
+    <p>Te invito a mi cumpleaños 🎉</p>
+    <p>Haz clic para continuar...</p>
+  </div>
+  <div class="page page2">
+    <h2>📅 Fecha del evento</h2>
+    <p><span id="fecha"></span></p>
+    <p>🕒 Hora: 5:00 PM</p>
+  </div>
+  <div class="page page3">
+    <h2>📍 Lugar</h2>
+    <p>Calle Falsa 123</p>
+    <p>Ciudad Imaginaria</p>
+    <p>¡Te espero! 😊</p>
+  </div>
+</div>
+
+<audio id="sound" src="music.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
